@@ -40,15 +40,13 @@ $(document).ready(function() {
                     )
 
         //$("#add").click(function(event) {
-        $("select#adulttix").change(function(){
-
-
+        $("select.form-control").change(function(){
           var adulttix = parseInt($("select#adulttix").val());
           var childtix = parseInt($("select#childtix").val());
           var seniortix = parseInt($("select#seniortix").val());
           var totaltix = (adulttix * 7.5) + (childtix * 5) + (seniortix * 3);
           var totalprice = totaltix.toFixed(2)
-          $("#totalPrice").text("$" + totalprice);
+          $("#totalPrice").text("Total Price: $" + totalprice);
         });
         });
     });
