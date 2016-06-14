@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Zootopia</h1>
+      <img class="resize img-responsive margin" src="img/deadpool.jpg" alt="movie poster of Deadpool" data-toggle="modal" data-target="#myModal"/>
+      <img class="resize img-responsive margin" src="img/Ghostbusters.jpg" alt="movie poster of Ghostbusters" data-toggle="modal" data-target="#myModal"/>
+      <img class="resize img-responsive margin" src="img/zootopia.jpg" alt="movie poster of zootopia" data-toggle="modal" data-target="#myModal"/>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Times Playing</h4>
+          </div>
+          <div class="modal-body">
+            <label>
+              <input type="radio" name="optionsRadios" id="radiotime1" value="option1" checked> 3:45 p.m.
+            </label>
+            <label>
+              <input type="radio" name="optionsRadios" id="radiotime2" value="option1" checked> 5:45 p.m.
+            </label>
+            <label>
+              <input type="radio" name="optionsRadios" id="radiotime3" value="option1" checked> 8:45 p.m.
+            </label>
+            <p id="prices">
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="okaybutton">Okay!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
